@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.sura.misAliados.dominio.modelo.Independiente;
 
-public interface RepositorioIndependiente {
+public interface IndependienteRepositorio {
 
 	public List<Independiente> consultarListaIndependientes();
 	

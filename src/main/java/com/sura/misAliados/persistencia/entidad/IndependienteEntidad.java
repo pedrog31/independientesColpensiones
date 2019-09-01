@@ -4,7 +4,9 @@ import java.util.Date;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document
 public class IndependienteEntidad {
 	
 	@Id
@@ -23,10 +25,9 @@ public class IndependienteEntidad {
 	
 	public IndependienteEntidad() {	}
 
-	public IndependienteEntidad(ObjectId _id, String apellidos, String correo, String estado, Date fechaNacimiento,
+	public IndependienteEntidad(String apellidos, String correo, String estado, Date fechaNacimiento,
 			String ingresosMensualesAprox, String nombres, String numeroDocumento, String oficio, String sexo,
 			String telefono, String tipoDocumento) {
-		this._id = _id;
 		this.apellidos = apellidos;
 		this.correo = correo;
 		this.estado = estado;

@@ -1,22 +1,22 @@
 package com.sura.misAliados.dominio.servicio;
 
 import com.sura.misAliados.dominio.modelo.Independiente;
-import com.sura.misAliados.dominio.repositorio.RepositorioIndependiente;
+import com.sura.misAliados.dominio.repositorio.IndependienteRepositorio;
 
 public class IndependienteServicio {
 	
-	private RepositorioIndependiente repositorioIndependiente;
+	private IndependienteRepositorio independienteRepositorio;
 
-	public IndependienteServicio(RepositorioIndependiente repositorioIndependiente) {
-		this.repositorioIndependiente = repositorioIndependiente;
+	public IndependienteServicio(IndependienteRepositorio independienteRepositorio) {
+		this.independienteRepositorio = independienteRepositorio;
 	}
 	
 	public void registrarIndependiente (Independiente independiente) {
-		repositorioIndependiente.registrarIndependiente(independiente);
+		independienteRepositorio.registrarIndependiente(independiente);
 	}
 	
 	public void actualizarEstadoIndependiente (String tipoDocumento, String numeroDocumento, String estado) {
-		repositorioIndependiente.actualizarEstadoIndependiente(tipoDocumento, numeroDocumento, estado);
+		independienteRepositorio.actualizarEstadoIndependiente(tipoDocumento, numeroDocumento, estado);
 	}
 
 }
